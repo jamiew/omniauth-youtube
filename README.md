@@ -1,22 +1,36 @@
-# OmniAuth YouTube
+OmniAuth YouTube
+================
 
-This is an OmniAuth strategy for authenticating to YouTube.
+This is an [OmniAuth 1.0](https://github.com/intridea/omniauth) strategy for authenticating to YouTube.
 
-This currently requires features only available from a fork of *omniauth-oauth*:
+Get a YouTube API key on their [developer dashboard](http://code.google.com/apis/youtube/dashboard/)
 
-<https://github.com/jamiew/omniauth-oauth>
-
-I'll update this when the patch is merged into core, and a gem
-has been published.
+An example Rails application using omniauth is also available:
+<https://github.com/jamiew/omniauth-rails-app>
 
 
-## Basic Usage
+Usage
+-----
 
-    use OmniAuth::Builder do
-      provider :youtube, ENV['YOUTUBE_KEY'], ENV['YOUTUBE_SECRET']
-    end
+In a rack application:
 
-## License
+```ruby
+use OmniAuth::Builder do
+  provider :youtube, ENV['YOUTUBE_KEY'], ENV['YOUTUBE_SECRET']
+end
+
+For Rails, put this in `config/initializers/omniauth.rb`:
+
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :youtube, ENV['YOUTUBE_KEY'], ENV['YOUTUBE_SECRET']
+end
+```
+
+
+License
+-------
 
 Copyright (c) 2011 Jamie Wilkinson
-Source code released under an MIT license
+
+This source code released under an MIT license.
