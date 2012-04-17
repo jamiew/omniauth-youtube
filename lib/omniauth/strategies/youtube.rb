@@ -18,7 +18,7 @@ module OmniAuth
         :scope => 'http://gdata.youtube.com'
       }
 
-      uid { user['id'] }
+      uid { user['id']['$t'] }
 
       info do
         {
