@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'omniauth-oauth', '~> 1.0'
+  gem.add_runtime_dependency 'omniauth-oauth2', '~> 1.0'
 
   gem.required_rubygems_version = Gem::Requirement.new('>= 1.3.6') if gem.respond_to? :required_rubygems_version=
 end
