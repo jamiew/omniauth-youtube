@@ -1,22 +1,19 @@
-require 'omniauth-oauth'
+require 'omniauth-oauth2'
 require 'multi_json'
 
 module OmniAuth
   module Strategies
-    class YouTube < OmniAuth::Strategies::OAuth
+    class YouTube < OmniAuth::Strategies::OAuth2
       option :name, 'youtube'
       option :client_options, {
-        :site => 'https://www.google.com',
-        :request_token_path => '/accounts/OAuthGetRequestToken',
-        :access_token_path => '/accounts/OAuthGetAccessToken',
-        :authorize_path => '/accounts/OAuthAuthorizeToken',
+        :site => 'https://www.youtube.com',
+        :authorize_url => 'https://accounts.google.com/o/oauth2/auth',
+        :token_url => 'https://accounts.google.com/o/oauth2/token'
       }
-
-      # For the time being this option requires a fork of omniauth-oauth:
-      # http://github.com/jamiew/omniauth-oauth
-      option :request_params, {
+      option :authorize_params, {
         :scope => 'http://gdata.youtube.com'
       }
+
 
       uid { user['id']['$t'] }
 
