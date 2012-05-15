@@ -18,6 +18,7 @@ In a rack application:
 use OmniAuth::Builder do
   provider :youtube, ENV['YOUTUBE_KEY'], ENV['YOUTUBE_SECRET']
 end
+```
 
 For Rails, put this in `config/initializers/omniauth.rb`:
 
