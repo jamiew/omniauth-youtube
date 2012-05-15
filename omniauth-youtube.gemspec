@@ -5,10 +5,10 @@ require "omniauth-youtube/version"
 Gem::Specification.new do |gem|
   gem.name        = "omniauth-youtube"
   gem.version     = Omniauth::YouTube::VERSION
-  gem.authors     = ["Benjamin Fritsch"]
-  gem.email       = ["ben@lomography.com"]
-  gem.homepage    = "https://github.com/lomography/omniauth-youtube"
-  gem.description = %q{OmniAuth strategy for YouTube}
+  gem.authors     = ["Jamie Wilkinson"]
+  gem.email       = ["jamie@jamiedubs.com"]
+  gem.homepage    = "https://github.com/jamiew/omniauth-youtube"
+  gem.description = %q{OmniAuth strategy for YouTube (OAuth 2.0)}
   gem.summary     = gem.description
 
   gem.files         = `git ls-files`.split("\n")
