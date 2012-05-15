@@ -28,6 +28,13 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
+Authors
+-------
+
+* [Jamie Wilkinson (@jamiew)](https://github.com/jamiew)
+* [@tarko](https://github.com/tarko)
+* [Simon Gate (@simon)](https://github.com/simon)
+
 
 License
 -------
