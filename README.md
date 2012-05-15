@@ -3,7 +3,7 @@ OmniAuth YouTube
 
 This is an [OmniAuth 1.0](https://github.com/intridea/omniauth) strategy for authenticating to YouTube.
 
-Get a YouTube API key on their [developer dashboard](http://code.google.com/apis/youtube/dashboard/)
+Get a Google Oauth2.0 API key at their [api console](https://code.google.com/apis/console/)
 
 An example Rails application using omniauth is also available:
 <https://github.com/jamiew/omniauth-rails-app>
