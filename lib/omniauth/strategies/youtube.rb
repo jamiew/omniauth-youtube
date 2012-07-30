@@ -28,7 +28,9 @@ module OmniAuth
           'last_name' => user['yt$lastName'] && user['yt$lastName']['$t'],
           'image' => user['media$thumbnail'] && user['media$thumbnail']['url'],
           'description' => user['yt$description'] && user['yt$description']['$t'],
-          'location' => user['yt$location'] && user['yt$location']['$t']
+          'location' => user['yt$location'] && user['yt$location']['$t'],
+          'channel_title' => user['title']['$t'],
+          'subscribers_count' => user['yt$statistics']['subscriberCount']
         }
       end
 
