@@ -1,6 +1,23 @@
 OmniAuth YouTube
 ================
 
+**NOTE: THIS GEM IS DEPRECATED IN FAVOR OF `google_oauth2`**
+
+google_oauth2 configuration for YouTube
+---------------------------------------
+
+This gem no longer works. Try [omniauth-google-oauth2](https://github.com/zquestz/omniauth-google-oauth2) instead:
+
+```
+config.omniauth :google_oauth2,KEY,SECRET, { access_type: "offline", approval_prompt: "force", name: "youtube" }
+```
+
+For more discussion, see [omniauth-youtube issue #7](https://github.com/jamiew/omniauth-youtube/issues/7)
+
+
+About (OLD)
+-----------
+
 This is an [OmniAuth 1.0](https://github.com/intridea/omniauth) strategy for authenticating to YouTube.
 
 Get a Google Oauth2.0 API key at their [API console](https://code.google.com/apis/console/)
